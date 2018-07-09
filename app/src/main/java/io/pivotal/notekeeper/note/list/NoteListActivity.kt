@@ -30,7 +30,11 @@ class NoteListActivity : BaseActivity() {
         note_list.layoutManager = LinearLayoutManager(this)
         note_list.adapter = NoteListAdapter(
                 noteService,
-                { position -> startActivity(Intent(that, NoteActivity::class.java)) }
+                { position ->
+                    val intent = Intent(that, NoteActivity::class.java)
+                    intent.putExtra(NoteActivity.NOTE_ID_EXTRA, position)
+                    startActivity(intent)
+                }
         )
     }
 }
