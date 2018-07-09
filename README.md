@@ -8,8 +8,9 @@ And learn about Android <o/
 [ ] Update an existing note and save the result
 [ ] Update an existing note and cancel the update
 [ ] E-mail a note (the whole song-and-dance of SaveBundles and stuff and persistence)
+[ ] Try integrate with Travis CI
 [ ] Create a new note
 [ ] Play with a side-menu
-[ ] Get notes from an http server
 [ ] Saves notes locally to a sqlite db
+[ ] Get notes from an http server
 [ ] Sync server !
