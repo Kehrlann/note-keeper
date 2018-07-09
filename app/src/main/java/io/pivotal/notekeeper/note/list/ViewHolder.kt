@@ -8,9 +8,11 @@ import io.pivotal.notekeeper.R.id.card_preview
 import io.pivotal.notekeeper.R.id.card_title
 import io.pivotal.notekeeper.note.Note
 
-class ViewHolder(val view: ConstraintLayout, val listener: RecyclerViewClickListener?) : RecyclerView.ViewHolder(view), View.OnClickListener {
+class ViewHolder(val view: ConstraintLayout,
+                 private val listener: RecyclerViewClickListener?
+) : RecyclerView.ViewHolder(view), View.OnClickListener {
     override fun onClick(v: View) {
-        listener?.recyclerViewListClicked(note.id)
+        listener?.invoke(note.id)
     }
 
     var note = Note(-1, "", "")

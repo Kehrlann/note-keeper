@@ -28,7 +28,4 @@ class NoteListAdapter(
     }
 }
 
-interface RecyclerViewClickListener {
-    fun recyclerViewListClicked(position: Int)
-}
-
+typealias RecyclerViewClickListener = (position: Int) -> Unit

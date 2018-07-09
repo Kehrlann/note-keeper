@@ -17,6 +17,8 @@ class NoteListActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        val noteService = (this.application as NoteKeeperApplication).noteService
+
         val that = this
         setContentView(R.layout.content_main)
 
@@ -26,11 +28,9 @@ class NoteListActivity : BaseActivity() {
         }
 
         note_list.layoutManager = LinearLayoutManager(this)
-        note_list.adapter = NoteListAdapter((this.application as NoteKeeperApplication).noteService,
-                object: RecyclerViewClickListener {
-                    override fun recyclerViewListClicked(position: Int) {
-                        startActivity(Intent(that, NoteActivity::class.java))
-                    }
-                })
+        note_list.adapter = NoteListAdapter(
+                noteService,
+                { position -> startActivity(Intent(that, NoteActivity::class.java)) }
+        )
     }
 }
