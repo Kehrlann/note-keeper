@@ -1,6 +1,7 @@
 package io.pivotal.notekeeper
 
 import android.support.v7.widget.RecyclerView
+import io.pivotal.notekeeper.note.list.NoteListActivity
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -13,10 +14,10 @@ import org.robolectric.RobolectricTestRunner
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 @RunWith(RobolectricTestRunner::class)
-class MainActivityTest {
+class NoteListActivityTest {
     @Test
     fun `displays a list of cards`() {
-        val mainActivity = Robolectric.setupActivity(MainActivity::class.java)
+        val mainActivity = Robolectric.setupActivity(NoteListActivity::class.java)
         val recyclerView: RecyclerView = mainActivity.findViewById(R.id.note_list)
         assertThat(recyclerView).isNotNull
         assertThat(recyclerView.childCount).isGreaterThan(1)

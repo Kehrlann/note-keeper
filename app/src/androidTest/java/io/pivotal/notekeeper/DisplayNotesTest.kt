@@ -12,6 +12,7 @@ import android.support.test.espresso.matcher.ViewMatchers.withId
 import android.support.test.espresso.matcher.ViewMatchers.withText
 import android.support.test.runner.AndroidJUnit4
 import io.pivotal.notekeeper.note.details.NoteActivity
+import io.pivotal.notekeeper.note.list.NoteListActivity
 import org.hamcrest.BaseMatcher
 import org.hamcrest.Description
 import org.hamcrest.Matcher
@@ -30,7 +31,7 @@ import org.junit.runner.RunWith
 class DisplayNotesTest {
 
     @get:Rule
-    var mActivityRule = IntentsTestRule<MainActivity>(MainActivity::class.java)
+    var mActivityRule = IntentsTestRule<NoteListActivity>(NoteListActivity::class.java)
 
     val appContext = InstrumentationRegistry.getTargetContext()
 
