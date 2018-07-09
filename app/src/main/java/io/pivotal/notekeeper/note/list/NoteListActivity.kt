@@ -30,7 +30,6 @@ class NoteListActivity : BaseActivity() {
                 object: RecyclerViewClickListener {
                     override fun recyclerViewListClicked(position: Int) {
                         startActivity(Intent(that, NoteActivity::class.java))
-                        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     }
                 })
     }
