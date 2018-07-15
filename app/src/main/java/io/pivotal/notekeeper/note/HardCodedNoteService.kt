@@ -4,11 +4,11 @@ import java.util.*
 
 interface NoteService {
     val notes: List<Note>
-    fun note(id: Int): Note?
+    fun findNote(id: Int): Note?
 }
 
 class HardCodedNoteService: NoteService {
-    override fun note(id: Int): Note? {
+    override fun findNote(id: Int): Note? {
         return notes.find { it.id == id }
     }
 

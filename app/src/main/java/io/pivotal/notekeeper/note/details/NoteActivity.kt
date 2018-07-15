@@ -21,7 +21,7 @@ class NoteActivity : BaseActivity() {
     }
 
     private fun setNote() {
-        val note = noteService.note(intent.getIntExtra(NOTE_ID_EXTRA, NOTE_ID_DEFAULT))
+        val note = noteService.findNote(intent.getIntExtra(NOTE_ID_EXTRA, NOTE_ID_DEFAULT))
         note_title.setText(note?.title, TextView.BufferType.EDITABLE)
         note_content.setText(note?.text, TextView.BufferType.EDITABLE)
     }
