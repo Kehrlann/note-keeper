@@ -1,12 +1,8 @@
 package io.pivotal.notekeeper
 
 import android.app.Application
-import dagger.Component
-import dagger.Module
-import dagger.Provides
-import dagger.android.AndroidInjectionModule
-import io.pivotal.notekeeper.note.NoteService
 import io.pivotal.notekeeper.note.HardCodedNoteService
+import io.pivotal.notekeeper.note.NoteService
 
 //@Component(modules = [AndroidInjectionModule::class, AppModule::class])
 //interface AppComponent

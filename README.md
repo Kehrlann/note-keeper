@@ -5,7 +5,7 @@ And learn about Android <o/
 ## TODO
 [x] Display list of notes
 [x] Display individual note
-[ ] Update an existing note and save the result
+[x] Update an existing note and save the result
 [ ] Update an existing note and cancel the update
 [ ] E-mail a note (the whole song-and-dance of SaveBundles and stuff and persistence)
 [ ] Try integrate with Travis CI

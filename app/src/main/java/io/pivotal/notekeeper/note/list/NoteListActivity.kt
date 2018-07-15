@@ -37,4 +37,10 @@ class NoteListActivity : BaseActivity() {
                 }
         )
     }
+
+    override fun onResume() {
+        super.onResume()
+        // required so that the list view updates when we press back on a note details view
+        note_list.adapter.notifyDataSetChanged()
+    }
 }

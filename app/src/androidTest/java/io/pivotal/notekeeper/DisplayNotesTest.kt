@@ -2,6 +2,7 @@ package io.pivotal.notekeeper
 
 import android.content.ComponentName
 import android.support.test.InstrumentationRegistry
+import android.support.test.espresso.Espresso
 import android.support.test.espresso.Espresso.onView
 import android.support.test.espresso.action.ViewActions
 import android.support.test.espresso.assertion.ViewAssertions.matches
@@ -51,6 +52,28 @@ class DisplayNotesTest {
 
         intended(hasComponent(ComponentName(appContext, NoteActivity::class.java)))
         onView(withId(R.id.note_title)).check(matches(withText("Title 0")))
+    }
+
+    @Test
+    fun updatesANote() {
+        onView(first(withId(R.id.note_card))).perform(ViewActions.click())
+
+        onView(withId(R.id.note_title))
+                .perform(ViewActions.clearText())
+                .perform(ViewActions.typeText("New title"))
+
+        onView(withId(R.id.note_content))
+                .perform(ViewActions.clearText())
+                .perform(ViewActions.typeText("New content"))
+
+        Espresso.closeSoftKeyboard()
+        Espresso.pressBack()
+
+        onView(first(withId(R.id.card_title)))
+                .check(matches(withText("New title")))
+
+        onView(first(withId(R.id.card_preview)))
+                .check(matches(withText("New content")))
     }
 
     // TODO: put this somewhere else
