@@ -5,14 +5,25 @@ import java.util.*
 interface NoteService {
     val notes: List<Note>
     fun findNote(id: Int): Note?
+    fun saveNote(note: Note)
 }
 
 class HardCodedNoteService: NoteService {
+    private val _notes: MutableList<Note> = (0..19)
+            .map { Note(it, "Title $it", makeRandomNoteContent()) }
+            .toMutableList()
+
+    override val notes: List<Note>
+        get() = _notes.toList()
+
     override fun findNote(id: Int): Note? {
         return notes.find { it.id == id }
     }
 
-    override val notes: List<Note> = (0..19).map { Note(it, "Title $it", makeRandomNoteContent()) }
+    override fun saveNote(newNote: Note) {
+        val currentIndex = _notes.indexOfFirst { it.id == newNote.id }
+        _notes.set(currentIndex, newNote)
+    }
 
     companion object {
     private val sampleText = """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate sodales odio sit amet vestibulum. Aliquam vel libero lacinia, mollis nisi non, vestibulum nunc. Nam sagittis enim eget enim hendrerit fermentum. Mauris lobortis gravida viverra. Maecenas non orci quis metus mollis tincidunt. Sed luctus bibendum ante iaculis vestibulum. Nunc malesuada nibh vel neque condimentum, quis pretium tellus convallis. Suspendisse sed pretium lorem, ac consectetur dui. Nam gravida nunc mauris, non congue sem pharetra quis. Integer varius erat ac lectus facilisis, bibendum imperdiet leo cursus.
