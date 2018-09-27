@@ -3,12 +3,12 @@
     package="io.pivotal.notekeeper">
 
     <application
+        android:name=".NoteKeeperApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".NoteKeeperApplication"
         android:theme="@style/AppTheme">
         <activity
             android:name=".note.list.NoteListActivity"
@@ -22,9 +22,7 @@
         </activity>
         <activity
             android:name=".note.details.NoteActivity"
-            android:label="@string/note_details"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:label="@string/note_details"></activity>
     </application>
 
 </manifest>

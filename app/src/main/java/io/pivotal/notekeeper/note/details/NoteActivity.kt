@@ -1,8 +1,8 @@
 package io.pivotal.notekeeper.note.details
 
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
-import io.pivotal.notekeeper.BaseActivity
 import io.pivotal.notekeeper.NoteKeeperApplication
 import io.pivotal.notekeeper.R
 import io.pivotal.notekeeper.kotlin.InitOnceProperty
@@ -10,7 +10,7 @@ import io.pivotal.notekeeper.note.Note
 import io.pivotal.notekeeper.note.NoteService
 import kotlinx.android.synthetic.main.note_content.*
 
-class NoteActivity : BaseActivity() {
+class NoteActivity : AppCompatActivity() {
 
     lateinit var noteService: NoteService
     private var note: Note by InitOnceProperty()
