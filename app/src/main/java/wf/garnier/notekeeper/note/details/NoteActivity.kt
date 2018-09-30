@@ -1,13 +1,13 @@
-package io.pivotal.notekeeper.note.details
+package wf.garnier.notekeeper.note.details
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
-import io.pivotal.notekeeper.NoteKeeperApplication
-import io.pivotal.notekeeper.R
-import io.pivotal.notekeeper.kotlin.InitOnceProperty
-import io.pivotal.notekeeper.note.Note
-import io.pivotal.notekeeper.note.NoteService
+import wf.garnier.notekeeper.NoteKeeperApplication
+import wf.garnier.notekeeper.R
+import wf.garnier.notekeeper.kotlin.InitOnceProperty
+import wf.garnier.notekeeper.note.Note
+import wf.garnier.notekeeper.note.NoteService
 import kotlinx.android.synthetic.main.note_content.*
 
 class NoteActivity : AppCompatActivity() {

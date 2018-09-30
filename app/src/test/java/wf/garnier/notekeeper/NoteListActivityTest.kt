@@ -1,8 +1,8 @@
-package io.pivotal.notekeeper
+package wf.garnier.notekeeper
 
 import android.support.v7.widget.RecyclerView
-import io.pivotal.notekeeper.note.list.NoteListActivity
-import io.pivotal.notekeeper.testdoubles.FakeNoteKeeperApplication
+import wf.garnier.notekeeper.note.list.NoteListActivity
+import wf.garnier.notekeeper.testdoubles.FakeNoteKeeperApplication
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith

@@ -1,4 +1,4 @@
-package io.pivotal.notekeeper
+package wf.garnier.notekeeper
 
 import android.content.ComponentName
 import android.support.test.InstrumentationRegistry
@@ -12,8 +12,8 @@ import android.support.test.espresso.intent.rule.IntentsTestRule
 import android.support.test.espresso.matcher.ViewMatchers.withId
 import android.support.test.espresso.matcher.ViewMatchers.withText
 import android.support.test.runner.AndroidJUnit4
-import io.pivotal.notekeeper.note.details.NoteActivity
-import io.pivotal.notekeeper.note.list.NoteListActivity
+import wf.garnier.notekeeper.note.details.NoteActivity
+import wf.garnier.notekeeper.note.list.NoteListActivity
 import org.hamcrest.BaseMatcher
 import org.hamcrest.Description
 import org.hamcrest.Matcher

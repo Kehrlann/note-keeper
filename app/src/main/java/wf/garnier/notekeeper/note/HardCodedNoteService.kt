@@ -1,4 +1,4 @@
-package io.pivotal.notekeeper.note
+package wf.garnier.notekeeper.note
 
 import java.util.*
 

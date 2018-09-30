@@ -1,12 +1,12 @@
-package io.pivotal.notekeeper.note.list
+package wf.garnier.notekeeper.note.list
 
 import android.support.constraint.ConstraintLayout
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.TextView
-import io.pivotal.notekeeper.R.id.card_preview
-import io.pivotal.notekeeper.R.id.card_title
-import io.pivotal.notekeeper.note.Note
+import wf.garnier.notekeeper.R.id.card_preview
+import wf.garnier.notekeeper.R.id.card_title
+import wf.garnier.notekeeper.note.Note
 
 class ViewHolder(val view: ConstraintLayout,
                  private val listener: RecyclerViewClickListener?

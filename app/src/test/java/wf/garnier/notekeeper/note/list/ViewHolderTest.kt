@@ -1,10 +1,10 @@
-package io.pivotal.notekeeper.note.list
+package wf.garnier.notekeeper.note.list
 
 import android.support.constraint.ConstraintLayout
 import android.view.LayoutInflater
 import android.widget.TextView
-import io.pivotal.notekeeper.R
-import io.pivotal.notekeeper.note.Note
+import wf.garnier.notekeeper.R
+import wf.garnier.notekeeper.note.Note
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith

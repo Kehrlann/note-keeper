@@ -1,10 +1,10 @@
-package io.pivotal.notekeeper.testdoubles
+package wf.garnier.notekeeper.testdoubles
 
 import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
-import io.pivotal.notekeeper.NoteKeeperApplication
-import io.pivotal.notekeeper.note.Note
-import io.pivotal.notekeeper.note.NoteService
+import wf.garnier.notekeeper.NoteKeeperApplication
+import wf.garnier.notekeeper.note.Note
+import wf.garnier.notekeeper.note.NoteService
 
 class FakeNoteKeeperApplication: NoteKeeperApplication() {
     override var noteService = mock<NoteService> {

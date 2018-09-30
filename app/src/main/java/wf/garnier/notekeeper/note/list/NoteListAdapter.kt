@@ -1,11 +1,11 @@
-package io.pivotal.notekeeper.note.list
+package wf.garnier.notekeeper.note.list
 
 import android.support.constraint.ConstraintLayout
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import io.pivotal.notekeeper.R
-import io.pivotal.notekeeper.note.NoteService
+import wf.garnier.notekeeper.R
+import wf.garnier.notekeeper.note.NoteService
 
 
 class NoteListAdapter(

@@ -1,8 +1,8 @@
-package io.pivotal.notekeeper
+package wf.garnier.notekeeper
 
 import android.app.Application
-import io.pivotal.notekeeper.note.HardCodedNoteService
-import io.pivotal.notekeeper.note.NoteService
+import wf.garnier.notekeeper.note.HardCodedNoteService
+import wf.garnier.notekeeper.note.NoteService
 
 //@Component(modules = [AndroidInjectionModule::class, AppModule::class])
 //interface AppComponent

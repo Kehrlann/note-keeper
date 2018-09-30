@@ -1,11 +1,11 @@
-package io.pivotal.notekeeper.note.details
+package wf.garnier.notekeeper.note.details
 
 import android.content.Intent
 import android.widget.TextView
 import com.nhaarman.mockito_kotlin.verify
-import io.pivotal.notekeeper.R
-import io.pivotal.notekeeper.note.Note
-import io.pivotal.notekeeper.testdoubles.FakeNoteKeeperApplication
+import wf.garnier.notekeeper.R
+import wf.garnier.notekeeper.note.Note
+import wf.garnier.notekeeper.testdoubles.FakeNoteKeeperApplication
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith

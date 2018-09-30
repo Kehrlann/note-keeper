@@ -1,4 +1,4 @@
-package io.pivotal.notekeeper
+package wf.garnier.notekeeper
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,7 +11,7 @@ import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import android.view.ViewGroup
-import io.pivotal.notekeeper.note.details.NoteActivity
+import wf.garnier.notekeeper.note.details.NoteActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 

@@ -1,13 +1,13 @@
-package io.pivotal.notekeeper.note.list
+package wf.garnier.notekeeper.note.list
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.widget.LinearLayoutManager
-import io.pivotal.notekeeper.BaseActivity
-import io.pivotal.notekeeper.NoteKeeperApplication
-import io.pivotal.notekeeper.R
-import io.pivotal.notekeeper.note.details.NoteActivity
+import wf.garnier.notekeeper.BaseActivity
+import wf.garnier.notekeeper.NoteKeeperApplication
+import wf.garnier.notekeeper.R
+import wf.garnier.notekeeper.note.details.NoteActivity
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
 

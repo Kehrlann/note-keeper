@@ -1,4 +1,4 @@
-package io.pivotal.notekeeper.kotlin
+package wf.garnier.notekeeper.kotlin
 
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
