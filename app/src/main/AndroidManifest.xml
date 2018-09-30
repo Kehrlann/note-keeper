@@ -22,7 +22,7 @@
         </activity>
         <activity
             android:name=".note.details.NoteActivity"
-            android:label="@string/note_details"></activity>
+            android:label="@string/note_details" />
     </application>
 
 </manifest>
