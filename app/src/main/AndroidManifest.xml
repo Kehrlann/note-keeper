@@ -23,6 +23,7 @@
         <activity
             android:name=".note.details.NoteEditActivity"
             android:label="@string/note_details" />
+        <activity android:name=".NoteDetailsActivity"></activity>
     </application>
 
 </manifest>
