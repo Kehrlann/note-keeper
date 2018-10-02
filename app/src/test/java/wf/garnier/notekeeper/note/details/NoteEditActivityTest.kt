@@ -17,12 +17,12 @@ import org.robolectric.annotation.Config
 
 @RunWith(RobolectricTestRunner::class)
 @Config(application = FakeNoteKeeperApplication::class)
-class NoteActivityTest {
+class NoteEditActivityTest {
 
     val activity by lazy {
         Robolectric
                 .buildActivity(
-                        NoteActivity::class.java,
+                        NoteEditActivity::class.java,
                         Intent().putExtra("NOTE_ID", 42))
                 .setup()
                 .get()

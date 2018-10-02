@@ -3,7 +3,7 @@
     package="wf.garnier.notekeeper">
 
     <application
-        android:name="wf.garnier.notekeeper.NoteKeeperApplication"
+        android:name=".NoteKeeperApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="wf.garnier.notekeeper.note.list.NoteListActivity"
+            android:name=".note.list.NoteListActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="wf.garnier.notekeeper.note.details.NoteActivity"
+            android:name=".note.details.NoteEditActivity"
             android:label="@string/note_details" />
     </application>
 

@@ -12,7 +12,7 @@ import android.support.test.espresso.intent.rule.IntentsTestRule
 import android.support.test.espresso.matcher.ViewMatchers.withId
 import android.support.test.espresso.matcher.ViewMatchers.withText
 import android.support.test.runner.AndroidJUnit4
-import wf.garnier.notekeeper.note.details.NoteActivity
+import wf.garnier.notekeeper.note.details.NoteEditActivity
 import wf.garnier.notekeeper.note.list.NoteListActivity
 import org.hamcrest.BaseMatcher
 import org.hamcrest.Description
@@ -50,7 +50,7 @@ class DisplayNotesTest {
     fun displaysANote() {
         onView(first(withId(R.id.note_card))).perform(ViewActions.click())
 
-        intended(hasComponent(ComponentName(appContext, NoteActivity::class.java)))
+        intended(hasComponent(ComponentName(appContext, NoteEditActivity::class.java)))
         onView(withId(R.id.note_title)).check(matches(withText("Title 0")))
     }
 

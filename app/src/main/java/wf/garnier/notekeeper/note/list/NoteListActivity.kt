@@ -7,7 +7,7 @@ import android.support.v7.widget.LinearLayoutManager
 import wf.garnier.notekeeper.BaseActivity
 import wf.garnier.notekeeper.NoteKeeperApplication
 import wf.garnier.notekeeper.R
-import wf.garnier.notekeeper.note.details.NoteActivity
+import wf.garnier.notekeeper.note.details.NoteEditActivity
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -31,8 +31,8 @@ class NoteListActivity : BaseActivity() {
         note_list.adapter = NoteListAdapter(
                 noteService,
                 { position ->
-                    val intent = Intent(that, NoteActivity::class.java)
-                    intent.putExtra(NoteActivity.NOTE_ID_EXTRA, position)
+                    val intent = Intent(that, NoteEditActivity::class.java)
+                    intent.putExtra(NoteEditActivity.NOTE_ID_EXTRA, position)
                     startActivity(intent)
                 }
         )

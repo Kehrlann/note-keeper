@@ -3,21 +3,21 @@ package wf.garnier.notekeeper.note.details
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
+import kotlinx.android.synthetic.main.note_edit.*
 import wf.garnier.notekeeper.NoteKeeperApplication
 import wf.garnier.notekeeper.R
 import wf.garnier.notekeeper.kotlin.InitOnceProperty
 import wf.garnier.notekeeper.note.Note
 import wf.garnier.notekeeper.note.NoteService
-import kotlinx.android.synthetic.main.note_content.*
 
-class NoteActivity : AppCompatActivity() {
+class NoteEditActivity : AppCompatActivity() {
 
     lateinit var noteService: NoteService
     private var note: Note by InitOnceProperty()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.note_content)
+        setContentView(R.layout.note_edit)
         noteService = (this.application as NoteKeeperApplication).noteService
 
         setNote()

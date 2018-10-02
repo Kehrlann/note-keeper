@@ -11,7 +11,7 @@ import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import android.view.ViewGroup
-import wf.garnier.notekeeper.note.details.NoteActivity
+import wf.garnier.notekeeper.note.details.NoteEditActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -72,7 +72,7 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_camera -> {
-                startActivity(Intent(this, NoteActivity::class.java))
+                startActivity(Intent(this, NoteEditActivity::class.java))
             }
             R.id.nav_gallery -> {
 
